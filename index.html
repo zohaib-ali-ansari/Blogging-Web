@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-items">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span>&#9776;</span>
+        </div>
+        <h1>𝑺𝒂𝒗𝒐𝒓𝒚𝑩𝒊𝒕𝒆𝒔</h1>
+
+        <div class="links">
+          <a href="">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <section class="slider">
+      <div class="slides">
+        <div
+          class="slide"
+          style="background-image: url('./images/image1.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('./images/image2.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('./images/image3.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('./images/image4.jpg')"
+        ></div>
+      </div>
+      <div class="navigation">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <h1>Our Latest Blogs</h1>
+
+      <div class="blog-post">
+        <img
+          src="./images/pancake.jpg"
+          alt="Pancakes Image"
+          class="blog-image"
+        />
+        <div class="blog-content">
+          <h2>Delicious Pancakes Recipe</h2>
+          <p class="date">November 22, 2024</p>
+          <p class="description">
+            Learn how to make the fluffiest and tastiest pancakes at home with
+            our step-by-step guide.
+          </p>
+          <a href="./blog pages/pancake.html">
+            <button class="read-more">Read More</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img
+          src="./images/chocolate cake.jpg"
+          alt="Chocolate Cake Image"
+          class="blog-image"
+        />
+        <div class="blog-content">
+          <h2>The Best Chocolate Cake</h2>
+          <p class="date">November 20, 2024</p>
+          <p class="description">
+            Discover the secret to baking a rich and moist chocolate cake that
+            everyone will love.
+          </p>
+          <a href="./blog pages/ch cake.html">
+            <button class="read-more">Read More</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img src="./images/pizza.jpg" alt="Pizza Image" class="blog-image" />
+        <div class="blog-content">
+          <h2>Homemade Pizza: Easy and Delicious</h2>
+          <p class="date">November 18, 2024</p>
+          <p class="description">
+            Learn how to make a crispy and cheesy homemade pizza with the
+            perfect toppings.
+          </p>
+          <a href="./blog pages/pizza.html">
+            <button class="read-more">Read More</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img src="./images/salad.jpg" alt="Salad Image" class="blog-image" />
+        <div class="blog-content">
+          <h2>Fresh and Healthy Salad Ideas</h2>
+          <p class="date">November 15, 2024</p>
+          <p class="description">
+            Freshen up your meal with healthy and delicious salad recipes that
+            will boost your energy.
+          </p>
+          <a href="./blog pages/salad.html">
+            <button class="read-more">Read More</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="blog-post">
+        <img src="./images/burger.jpg" alt="Burger Image" class="blog-image" />
+        <div class="blog-content">
+          <h2>The Perfect Burger: Step-by-Step Guide</h2>
+          <p class="date">November 12, 2024</p>
+          <p class="description">
+            Create the perfect burger with juicy patties, fresh veggies, and
+            homemade sauces.
+          </p>
+          <a href="./blog pages/burger.html">
+            <button class="read-more">Read More</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us" id="contact">
+      <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>
+          Have any questions or feedback? We'd love to hear from you! Fill out
+          the form below and we'll get back to you as soon as possible.
+        </p>
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here..."
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="about-us" id="about">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          Welcome to our blog! We are passionate about sharing delicious recipes
+          and food experiences. Our mission is to inspire people to cook at home
+          and discover the joy of creating flavorful dishes. From simple snacks
+          to gourmet meals, we share a variety of recipes to suit all tastes and
+          skill levels.
+        </p>
+        <p>
+          Join us on this culinary journey and let's explore the world of food
+          together!
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We are a passionate food blog sharing delicious recipes and food
+            experiences from around the world. Join us in discovering new
+            culinary creations.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Blogging. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
